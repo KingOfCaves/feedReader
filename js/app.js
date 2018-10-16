@@ -23,6 +23,12 @@ var allFeeds = [
     }
 ];
 
+var tester = {
+    name: "tester",
+    url: "http://www.test.com"
+};
+allFeeds.push(tester);
+
 /* This function starts up our application. The Google Feed
  * Reader API is loaded asynchonously and will then call this
  * function when the API is loaded.
