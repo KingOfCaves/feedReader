@@ -9,6 +9,12 @@
  * to ensure they don't run until the DOM is ready.
  */
 $(function() {
+    var tester = {
+        name: "tester", 
+        url: "http://test.com"
+    };
+    allFeeds.push(tester);
+
     /* This is our first test suite - a test suite just contains
     * a related set of tests. This suite is all about the RSS
     * feeds definitions, the allFeeds variable in our application.
@@ -31,12 +37,30 @@ $(function() {
          * in the allFeeds object and ensures it has a URL defined
          * and that the URL is not empty.
          */
+        it('all feeds have a url defined', function(){
+            var urlRequired = ["http://", "https://"];
+
+            allFeeds.forEach(function(feed){
+                expect(feed.url).toBeDefined();
+                expect(feed.url.length).not.toBe(0);
+
+                expect(
+                    urlRequired.some(element => feed.url.includes(element))
+                ).toBe(true);
+            });
+        });
 
 
         /* TODO: Write a test that loops through each feed
          * in the allFeeds object and ensures it has a name defined
          * and that the name is not empty.
          */
+        it('all feeds have a name defined', function(){
+            allFeeds.forEach(function (feed) {
+                expect(feed.name).toBeDefined();
+                expect(feed.name.length).not.toBe(0);
+            });
+        });
     });
 
 
