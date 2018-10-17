@@ -141,7 +141,7 @@ $(function() {
             await loadFeed(1, function () {
                 feedOne = document.querySelector(".feed").innerHTML;
                 // console.log(feedOne);
-                 loadFeed(2, function () {
+                loadFeed(2, function () {
                     feedTwo = document.querySelector(".feed").innerHTML;
                     // console.log(feedTwo);
                     done();
