@@ -1,4 +1,4 @@
-# feedReader
+# wills-feedreader-testing
 Creating tests for another person's feed reader app using the Jasmine.js test suite.
 
 ## TABLE OF CONTENTS
