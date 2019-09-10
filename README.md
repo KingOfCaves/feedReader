@@ -1,4 +1,5 @@
 # feedReader
+Creating tests for another person's feed reader app using the Jasmine.js test suite.
 
 ## TABLE OF CONTENTS
 
@@ -9,8 +10,10 @@
 
 In order to start testing, you need to download the files and then run the index.html file in your browser of choice. The app.js file is where all of the feed functionality is while the Jasmine test suites are in the feedreader.js file.
 
-## CREDITS
+## SCREENSHOTS
+![picture of the feed reader completing all tests](./docs/feed-reader-1.jpg)
 
+## CREDITS
 Some solutions to certain tests were found online using StackOverflow, the Jasmine.js documentation and udacity's studen hub. Here are a few links.
 
 ### Jasmine documentation
